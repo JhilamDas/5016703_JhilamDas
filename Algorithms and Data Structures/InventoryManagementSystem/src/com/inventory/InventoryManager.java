@@ -9,13 +9,11 @@ public class InventoryManager {
     public InventoryManager() {
         this.inventory = new HashMap<>();
     }
-
-    // Add a new product
+    
     public void addProduct(Product product) {
         inventory.put(product.getProductId(), product);
     }
 
-    // Update an existing product
     public void updateProduct(Product product) {
         if (inventory.containsKey(product.getProductId())) {
             inventory.put(product.getProductId(), product);
@@ -24,7 +22,6 @@ public class InventoryManager {
         }
     }
 
-    // Delete a product
     public void deleteProduct(String productId) {
         if (inventory.containsKey(productId)) {
             inventory.remove(productId);
@@ -33,7 +30,6 @@ public class InventoryManager {
         }
     }
 
-    // Retrieve a product
     public Product getProduct(String productId) {
         return inventory.get(productId);
     }

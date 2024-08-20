@@ -1,0 +1,17 @@
+1) Explain the concept of recursion and how it can simplify certain problems.
+
+Ans) Recursion is a method where the solution to a problem depends on solutions to smaller instances of the same problem. A recursive function calls itself with a smaller input. Simplifies the code for problems that have a natural recursive structure, such as tree traversal
+or dynamic programming problems. It, Breaks down complex problems into smaller, more manageable sub-problems.
+
+
+2) Discuss the time complexity of your recursive algorithm.
+
+Ans) Time Complexity: O(n)
+     Reason: The function avoids redundant calculations by storing previously computed results, making it more efficient for larger values of 'years'.
+
+3) Explain how to optimize the recursive solution to avoid excessive computation.
+
+Ans) We can optimize the recursive solution to avoid excessive computation by:
+	1. Create a Storage for Memoized Results: Use a HashMap to store the results of previous computations.
+	2. Check Before Recursive Call: Before making a recursive call, check if the result for the current year is already in the map.
+	3. Store Results After Computation: After computing the future value for a year, store it in the map.

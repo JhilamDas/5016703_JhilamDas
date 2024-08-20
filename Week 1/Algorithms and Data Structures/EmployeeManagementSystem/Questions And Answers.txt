@@ -1,0 +1,30 @@
+1) Explain how arrays are represented in memory and their advantages.
+
+Ans) Arrays are a contiguous block of memory where each element is stored sequentially. This allows for constant-time access to any element using its index (O(1)).
+Advantages:
+	Fast Access: O(1) time complexity for accessing elements by index.
+	Cache-Friendly: Due to contiguous memory allocation, arrays benefit from spatial locality, which improves cache performance.
+	Simplicity: Easy to implement and use for simple storage needs.
+
+2) Analyze the time complexity of each operation (add, search, traverse, delete).
+
+Ans) Time Complexity of each operations:
+	Add Employee:
+		Time Complexity: O(1) (assuming the array is not full)
+	Search Employee:
+		Time Complexity: O(n)
+	Traverse Employees:
+		Time Complexity: O(n)
+	Delete Employee:
+		Time Complexity: O(n)
+
+
+3) Discuss the limitations of arrays and when to use them.
+
+Ans) Limitations of arrays are:
+	1.Fixed Size: Arrays have a fixed size, which means the capacity must be defined at the time of creation. This can lead to 	inefficient use of memory or inability to accommodate more elements than initially planned.
+	2.Costly Insertions/Deletions: Insertions and deletions (other than at the end) are costly because they require shifting elements.
+    When to Use Arrays:
+	1.Fast Access: When you need fast access to elements using indices.
+	2.Memory Efficiency: When the size of the dataset is known and doesn't change frequently.
+	3.Simple Data: For simple data storage where the elements are homogeneous and their count is known beforehand.
